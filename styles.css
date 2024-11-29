@@ -1,0 +1,119 @@
+:root{
+    --color-black: #000000;
+    --color-sage: #1A3636;
+    --color-white: #ffffff;
+    --color-dark-blue: hwb(253 1% 77%);
+    --color-blue: hwb(240 3% 47%);
+    --color-light-blue: #ADD8E6;
+    --color-wine: #722f37;
+    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--color-black);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--color-white);
+    text-align: center;
+}
+.logo {
+  font-size: 20px; 
+  margin: 50px 0 50px 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .login {
+    margin: 20px;
+  }
+#signin-form {
+  margin-bottom: 50px;
+}
+
+#register-form {
+  display: none;
+}
+
+.form-struct {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.Bio-data {
+    width: 300px;
+    margin: 15px auto;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+#icons {
+    margin: 20px 0 100px 0;
+}
+.submit {
+    width: 300px;
+    color: var(--color-white);
+    border: 20px solid var(--color-blue);
+    background-color: var(--color-blue);
+    margin: auto;
+    cursor: pointer;
+    }
+.submit:hover {
+    border: 20px solid var(--color-wine);
+    background-color: var(--color-wine);
+    color: var(--color-light-blue);
+}
+input[type=text]:focus {
+border: 3px solid var(--color-light-blue);
+outline: none; 
+}
+.web-link {
+    margin: 20px 0;
+}
+#f-password {
+  margin-left: 20px;
+}
+#remme {
+ margin-right: 20px; 
+ text-decoration: none;  
+}
+footer {
+    margin-bottom: 45px;
+}
+.anchor {
+    color: var(--color-white);
+}
+a:hover {
+    color: var(--color-blue);
+}
+img {
+margin: 20px;
+}
+
+.web {
+margin-bottom: 30px;
+}
+.signlog {
+  border-radius: 20px;
+  height: 40px;
+}
+#login {
+   padding: 15px 50px;
+    background-color: var(--color-blue);
+    text-decoration: none;
+    
+    }
+  #login:hover {
+    color: var(--color-black);
+    background-color: var(--color-wine);
+  }
+  #reg {
+    padding: 15px 50px 15px 45px;
+    background-color: var(--color-blue);
+    text-decoration: none;
+    margin: -5px;
+  }
+  #reg:hover {
+    color: var(--color-black);
+    background-color: var(--color-wine);
+  }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bio-data form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/db05450523.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiN3-Dy1eFkFRw5ks8gMTk6lmVh8xlMpM_uw&s"
+            height="40px">
+        FTMO
+    </div>
+    <div class="web">
+        <a id="login" class="anchor signlog">Login</a>
+        <a id="reg" class="anchor signlog">Register</a>
+    </div>
+
+    <form id="signin-form" class="form-struct">
+        <input type="text" class="Bio-data" placeholder="User-name">
+        <input type="password" class="Bio-data" placeholder="password" minlength="8" maxlength="15">
+        <div class="web-link">
+            <label id="remme">
+                <input type="checkbox"> Remember me
+            </label>
+            <a href="#" target="_blank" id="f-password" class="anchor">Forget Password?</a>
+        </div>
+        <input type="submit" id="submit" value="Sign in" class="submit">
+    </form>
+
+    <form id="register-form">
+        <div class="form-struct">
+        <input type="text" class="Bio-data" id="fname" placeholder="First Name">
+        <input type="text" class="Bio-data" placeholder="Last Name">
+        <input type="date" class="Bio-data" id="dob">
+        <input type="email" class="Bio-data" id="email" placeholder="Email">
+        <input type="password" class="Bio-data" placeholder="password" minlength="8" maxlength="15">
+        <input type="password" class="Bio-data" placeholder="Confirm password" minlength="8" maxlength="15">
+        <input type="submit" class="submit" value="Register">
+        </div>
+    </form>
+    <div id="icons">
+        <a href="#" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwuzAv62MVmnH-lm-3KkLoklBHOoZDo_1BncEJ7ZJAj2pvysmeDYv6t8lbNzf2w2a-sNk&usqp=CAU"
+                height="40px"></a>
+        <a href="#" target="_blank"><img
+                src="https://banner2.cleanpng.com/20180324/ise/kisspng-iphone-7-plus-iphone-5s-iphone-5c-iphone-6-apple-logo-5ab6e2097bbcc4.5290704815219348575068.jpg"
+                height="40px"></a>
+        <a href="#" target="_blank"><img
+                src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png"
+                height="40px"></a>
+    </div>
+    <footer>
+        <a href="#" class="anchor">Cookie settings</a>
+    </footer>
+
+    <script>
+        document.getElementById("login").addEventListener("click", (e) => {
+            document.getElementById("register-form").style.display = "none"
+            document.getElementById("signin-form").style.display = "flex"
+        })
+        document.getElementById("reg").addEventListener("click", (e) => {
+            document.getElementById("signin-form").style.display = "none"
+            document.getElementById("register-form").style.display = "block"
+        })
+    </script>
+</body>
+
+</html>
